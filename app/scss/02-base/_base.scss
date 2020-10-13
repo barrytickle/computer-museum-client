@@ -1,0 +1,25 @@
+@import "vars";
+
+
+*{
+  box-sizing: border-box;
+}
+
+body,html{
+  margin: 0;
+  font-family: $primaryFont;
+  padding:0.5rem;
+  background:$cream;
+}
+
+.siteContainer{
+  background:$white;
+  border-radius: $containerRadius;
+  box-shadow:$boxShadow;
+  min-height:100vh;
+  overflow:hidden;
+  @media #{$laptop}{
+    width: 80%;
+    margin: 5vh auto 0 auto;
+  }
+}

@@ -1,0 +1,190 @@
+/* --- Colours --- */
+/* --- Colours --- */
+/* --------------------------------*/
+/* --- Fonts --- */
+/* --- Fonts --- */
+/* --------------------------------*/
+/* --- Media Querys --- */
+/* --- Media Querys --- */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  font-family: "Open Sans";
+  color: black;
+  padding: 0.5rem;
+  background: blue;
+}
+
+.site-container {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .site-container {
+    padding: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .site-container {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1420px) {
+  .site-container {
+    width: 1200px;
+  }
+}
+
+/* --- Colours --- */
+/* --- Colours --- */
+/* --------------------------------*/
+/* --- Fonts --- */
+/* --- Fonts --- */
+/* --------------------------------*/
+/* --- Media Querys --- */
+/* --- Media Querys --- */
+/* --- desktop nav --- */
+.nav-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+.site-nav {
+  background: #dceca9;
+}
+
+.site-nav__items {
+  padding: 20px;
+  background: #eee;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: 70px;
+}
+.site-nav__items a {
+  color: #BADA55;
+  margin: 7px 0;
+  text-decoration: none;
+  display: block;
+}
+@media (min-width: 1024px) {
+  .site-nav__items {
+    padding: 0;
+    width: auto;
+    display: block !important;
+    position: static;
+    background: none;
+  }
+  .site-nav__items a {
+    margin: 0 7px;
+    display: inline-block;
+  }
+}
+
+/* --- mobile nav --- */
+.mobile-nav {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 30px;
+  background: 0 0;
+  cursor: pointer;
+  border: 0;
+}
+@media (min-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.mobile-nav.open-nav {
+  z-index: 9;
+}
+.mobile-nav.open-nav .inner .icon-bar {
+  background: #BADA55;
+}
+
+.mobile-nav:focus {
+  outline: 0;
+}
+
+.mobile-nav .inner {
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  right: 0;
+  width: 20px;
+  height: 18px;
+  margin: -9px 0 0 -9px;
+}
+
+.mobile-nav .inner .icon-bar {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: #BADA55;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-nav .inner .icon-bar.top {
+  top: 0;
+}
+
+.mobile-nav .inner .icon-bar.middle {
+  top: 8px;
+}
+
+.mobile-nav .inner .icon-bar.bottom {
+  bottom: 0;
+}
+
+.mobile-nav.open-nav .inner .icon-bar.middle {
+  opacity: 0;
+}
+
+.mobile-nav.open-nav .inner .icon-bar.top {
+  top: 8px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.mobile-nav.open-nav .inner .icon-bar.bottom {
+  bottom: 8px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.example {
+  background: #BADA55;
+  height: 100px;
+  width: 100px;
+}
+@media (min-width: 768px) {
+  .example {
+    background: #eee;
+  }
+}

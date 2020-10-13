@@ -1,0 +1,66 @@
+.sidebar{
+  height:100vh;
+  width:100%;
+  box-shadow:$boxShadow;
+  border-radius: $containerRadius;
+  header{
+    height:250px;
+    position: relative;
+    background-image: url('/img/background/stars.svg');
+    background-size:contain;
+    background-color:$black;
+    overflow:hidden;
+    padding:20px;
+
+    @media #{$laptop}{
+      height:350px;
+    }
+
+    .headerIcon{
+      margin:0 10px;
+      padding-bottom:5px;
+      border-bottom:3px solid transparent;
+      transition: 0.2s ease-in-out;
+      &:hover, &.active{
+        border-bottom:3px solid $red;
+      }
+    }
+
+    &:after{
+      content:'';
+      display:block;
+      width:100%;
+      height:100px;
+      position: absolute;
+      background:url('/img/background/moon.svg');
+      background-size:cover;
+      bottom:0;
+      left:0;
+    }
+  }
+
+  main{
+    padding: 20px;
+    height: 75%;
+    position: relative;
+    >.row{
+     width:100%;
+    }
+    h1{
+      position: absolute;
+      top:50px;
+      left:50%;
+      transform: translateX(-50%);
+    }
+    .iconGroup{
+      min-height:500px;
+      padding:10px 0;
+      margin-right:10px;
+      &+div{
+        border-left:.5px solid #d2d2d2;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,15 @@
+.iconButton{
+  border-radius: 20px;
+  box-shadow: $boxShadow;
+  height:55px;
+  width:55px;
+  margin-bottom:20px;
+  transition: 0.2s ease-in-out;
+  border:0;
+  cursor:pointer;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+
+}
